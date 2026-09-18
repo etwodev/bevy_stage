@@ -2,6 +2,16 @@
 name = "bevy_stage"
 version = "0.1.0"
 edition = "2024"
+# Bevy 0.19 requires this; declaring it gives users a clear error rather than a
+# wall of syntax failures on an older toolchain.
+rust-version = "1.95"
+description = "Load glTF levels in Bevy with artist-authored metadata: node tags, seamless transitions, streaming sectors and LOD"
+license = "MIT"
+repository = "https://github.com/etwodev/bevy_stage"
+documentation = "https://docs.rs/bevy_stage"
+readme = "README.md"
+keywords = ["bevy", "gltf", "gamedev", "level", "streaming"]
+categories = ["game-development"]
 
 [dependencies]
 bevy = { version = "0.19.1", default-features = false, features = ["bevy_gltf", "bevy_scene", "bevy_asset", "bevy_pbr", "bevy_state", "bevy_log", "std", "serialize"] }
