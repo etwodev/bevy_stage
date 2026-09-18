@@ -1,0 +1,294 @@
+{
+  "asset": {
+    "version": "2.0",
+    "generator": "bevy_stage tools/gen_test_levels.py"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Stage",
+      "nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "extras": {
+        "stage_tag": "stage",
+        "display_name": "Atrium",
+        "ambient": 0.3
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Ground",
+      "translation": [
+        0,
+        -0.5,
+        0
+      ],
+      "scale": [
+        40,
+        1,
+        40
+      ],
+      "mesh": 0
+    },
+    {
+      "name": "SpawnPoint.001",
+      "translation": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "SpawnPoint.002",
+      "translation": [
+        3,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "PlayerStart",
+      "translation": [
+        -3,
+        1,
+        0
+      ],
+      "extras": {
+        "stage_tag": "spawn_point",
+        "team": "blue"
+      }
+    },
+    {
+      "name": "RedBase",
+      "translation": [
+        0,
+        1,
+        -8
+      ],
+      "extras": {
+        "SpawnPoint": "(team: \"red\")"
+      }
+    },
+    {
+      "name": "ExitNorth",
+      "translation": [
+        0,
+        0,
+        -20
+      ],
+      "extras": {
+        "stage_tag": "anchor",
+        "id": "exit_north"
+      }
+    },
+    {
+      "name": "ToHallway",
+      "translation": [
+        0,
+        1.5,
+        -19
+      ],
+      "scale": [
+        3,
+        3,
+        0.5
+      ],
+      "extras": {
+        "stage_tag": "portal",
+        "target": "levels/hallway.gltf",
+        "anchor": "entry_a",
+        "preload": 40.0
+      }
+    },
+    {
+      "name": "Sector_North",
+      "translation": [
+        0,
+        0,
+        -30
+      ],
+      "extras": {
+        "stage_tag": "sector",
+        "radius": 60.0
+      },
+      "children": [
+        8
+      ]
+    },
+    {
+      "name": "Pillar",
+      "translation": [
+        0,
+        2,
+        0
+      ],
+      "scale": [
+        1,
+        4,
+        1
+      ],
+      "mesh": 0
+    },
+    {
+      "name": "Sector_East",
+      "translation": [
+        60,
+        0,
+        0
+      ],
+      "extras": {
+        "stage_tag": "sector",
+        "source": "levels/sector_east.gltf",
+        "radius": 50.0
+      }
+    },
+    {
+      "name": "MysteryProp",
+      "translation": [
+        -8,
+        1,
+        4
+      ],
+      "extras": {
+        "stage_tag": "not_a_real_tag"
+      }
+    },
+    {
+      "name": "Rock_LOD0",
+      "translation": [
+        8,
+        0.5,
+        4
+      ],
+      "mesh": 0
+    },
+    {
+      "name": "Rock_LOD1",
+      "translation": [
+        8,
+        0.5,
+        4
+      ],
+      "scale": [
+        0.98,
+        0.98,
+        0.98
+      ],
+      "mesh": 0
+    },
+    {
+      "name": "Rock_LOD2",
+      "translation": [
+        8,
+        0.5,
+        4
+      ],
+      "scale": [
+        0.95,
+        0.95,
+        0.95
+      ],
+      "mesh": 0
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Cube",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 2,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "name": "Default",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.8,
+          0.8,
+          0.8,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.9
+      }
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC3",
+      "min": [
+        -0.5,
+        -0.5,
+        -0.5
+      ],
+      "max": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5123,
+      "count": 36,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 288,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 288,
+      "byteLength": 288,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 576,
+      "byteLength": 72,
+      "target": 34963
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 648,
+      "uri": "data:application/octet-stream;base64,AAAAvwAAAL8AAAA/AAAAPwAAAL8AAAA/AAAAPwAAAD8AAAA/AAAAvwAAAD8AAAA/AAAAPwAAAL8AAAC/AAAAvwAAAL8AAAC/AAAAvwAAAD8AAAC/AAAAPwAAAD8AAAC/AAAAvwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAC/AAAAvwAAAD8AAAC/AAAAvwAAAL8AAAC/AAAAPwAAAL8AAAC/AAAAPwAAAL8AAAA/AAAAvwAAAL8AAAA/AAAAPwAAAL8AAAA/AAAAPwAAAL8AAAC/AAAAPwAAAD8AAAC/AAAAPwAAAD8AAAA/AAAAvwAAAL8AAAC/AAAAvwAAAL8AAAA/AAAAvwAAAD8AAAA/AAAAvwAAAD8AAAC/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgL8AAAAAAAAAAAAAgL8AAAAAAAAAAAAAgL8AAAAAAAAAAAAAgL8AAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAvwAAAAAAAAAAAACAvwAAAAAAAAAAAACAvwAAAAAAAAAAAACAvwAAAAAAAAAAAAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACAAKAAsADAANAA4ADAAOAA8AEAARABIAEAASABMAFAAVABYAFAAWABcA"
+    }
+  ]
+}

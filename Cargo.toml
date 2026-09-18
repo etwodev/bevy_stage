@@ -1,0 +1,17 @@
+[package]
+name = "bevy_stage"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+bevy = { version = "0.19.1", default-features = false, features = ["bevy_gltf", "bevy_scene", "bevy_asset", "bevy_pbr", "bevy_state", "bevy_log", "std", "serialize"] }
+gltf = { version = "1.4", default-features = false, features = ["extras", "names"] }
+ron = "0.12.2"
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.151"
+thiserror = "2.0.20"
+
+[dev-dependencies]
+# Examples need a window and a renderer, so the dev build uses Bevy's default
+# features. `debug` makes unregistered-type panics name the type.
+bevy = { version = "0.19.1", features = ["debug", "bevy_gltf", "bevy_state", "serialize", "reflect_auto_register"] }
