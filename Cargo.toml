@@ -1,6 +1,6 @@
 [package]
 name = "bevy_stage"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2024"
 # Bevy 0.19 requires this; declaring it gives users a clear error rather than a
 # wall of syntax failures on an older toolchain.
@@ -24,4 +24,4 @@ thiserror = "2.0.20"
 [dev-dependencies]
 # Examples need a window and a renderer, so the dev build uses Bevy's default
 # features. `debug` makes unregistered-type panics name the type.
-bevy = { version = "0.19.1", features = ["debug", "bevy_gltf", "bevy_state", "serialize", "reflect_auto_register"] }
+bevy = { version = "0.19.1", features = ["debug", "bevy_gltf", "bevy_state", "serialize", "reflect_auto_register", "jpeg"] }
